@@ -12,7 +12,8 @@ for (long i = 2; i <= numberToFactorize / 2 ; i++) // we start loop from the bot
 
       for(int primeChecker = 2; primeChecker <= (int)Math.Sqrt(oppositeDivider); primeChecker++)  // loop to check if larger divider is prime
       {
-        if ((oppositeDivider % primeChecker) == 0) // break the loop as soon as a divider is found, which mean it's not a prime number
+       
+        if ((oppositeDivider % primeChecker) == 0) // break the loop as soon as a divider is found, which means it's not a prime number
         {
          break;
         }
@@ -26,8 +27,10 @@ for (long i = 2; i <= numberToFactorize / 2 ; i++) // we start loop from the bot
       }
     }    
 }
+
 Found:
   Console.WriteLine(answer);   
+  Console.ReadKey();
 
 
 
